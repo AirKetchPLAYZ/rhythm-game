@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/nekodex - circles [osu soundtrack].ogg-ca7c3855cc228a086ecc289b7444da7a.oggstr"
+
+[deps]
+
+source_file="res://nekodex - circles [osu soundtrack].ogg"
+dest_files=[ "res://.import/nekodex - circles [osu soundtrack].ogg-ca7c3855cc228a086ecc289b7444da7a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
