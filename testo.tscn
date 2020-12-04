@@ -20,6 +20,7 @@ thickness = 9
 bg_color = Color( 1, 1, 1, 0 )
 
 [node name="Node2D" type="Node2D"]
+process_priority = -409
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
