@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Fifth-Grader.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 62
+font_data = ExtResource( 1 )
+
+[node name="Label" type="Label"]
+anchor_top = 0.215
+anchor_right = 1.0
+anchor_bottom = 0.215
+margin_bottom = -599.8
+custom_fonts/font = SubResource( 1 )
+text = "game over NERD"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
