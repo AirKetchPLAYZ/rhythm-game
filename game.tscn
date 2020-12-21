@@ -1,0 +1,233 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://rsz_outer.png" type="Texture" id=1]
+[ext_resource path="res://Control.gd" type="Script" id=2]
+[ext_resource path="res://pause.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Fifth-Grader.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://AudioStreamPlayer.gd" type="Script" id=5]
+[ext_resource path="res://volume.tscn" type="PackedScene" id=6]
+[ext_resource path="res://MainGame.gd" type="Script" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 77
+font_data = ExtResource( 4 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 43.0743
+
+[sub_resource type="DynamicFont" id=3]
+size = 46
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxLine" id=4]
+color = Color( 1, 1, 1, 1 )
+thickness = 9
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 1, 1, 1, 0 )
+
+[node name="Node2D" type="Node2D"]
+process_priority = -409
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource( 7 )
+
+[node name="Game" type="Control" parent="CanvasLayer"]
+margin_left = -1.41422
+margin_right = 454.586
+margin_bottom = 598.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Game"]
+margin_top = 510.0
+margin_right = 370.0
+margin_bottom = 510.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hit1" type="Area2D" parent="CanvasLayer/Game/HBoxContainer"]
+
+[node name="Hit1" type="TextureRect" parent="CanvasLayer/Game/HBoxContainer/Hit1"]
+margin_right = 84.0
+margin_bottom = 84.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/Game/HBoxContainer/Hit1/Hit1"]
+margin_right = 88.0
+margin_bottom = 87.0
+custom_fonts/font = SubResource( 1 )
+text = "D"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Game/HBoxContainer/Hit1"]
+position = Vector2( 42.0448, 42.0448 )
+shape = SubResource( 2 )
+
+[node name="Hit2" type="Area2D" parent="CanvasLayer/Game/HBoxContainer"]
+position = Vector2( 90, 0 )
+
+[node name="Hit1" type="TextureRect" parent="CanvasLayer/Game/HBoxContainer/Hit2"]
+margin_right = 84.0
+margin_bottom = 84.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="CanvasLayer/Game/HBoxContainer/Hit2/Hit1"]
+margin_left = -0.545593
+margin_right = 87.4544
+margin_bottom = 87.0
+custom_fonts/font = SubResource( 1 )
+text = "F"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Game/HBoxContainer/Hit2"]
+position = Vector2( 42.0448, 42.0448 )
+shape = SubResource( 2 )
+
+[node name="Hit3" type="Area2D" parent="CanvasLayer/Game/HBoxContainer"]
+position = Vector2( 180, 0 )
+
+[node name="Hit1" type="TextureRect" parent="CanvasLayer/Game/HBoxContainer/Hit3"]
+margin_right = 84.0
+margin_bottom = 84.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="CanvasLayer/Game/HBoxContainer/Hit3/Hit1"]
+margin_left = -1.09116
+margin_right = 86.9088
+margin_bottom = 87.0
+custom_fonts/font = SubResource( 1 )
+text = "j"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Game/HBoxContainer/Hit3"]
+position = Vector2( 42.0448, 42.0448 )
+shape = SubResource( 2 )
+
+[node name="Hit4" type="Area2D" parent="CanvasLayer/Game/HBoxContainer"]
+position = Vector2( 270, 0 )
+
+[node name="Hit1" type="TextureRect" parent="CanvasLayer/Game/HBoxContainer/Hit4"]
+margin_right = 84.0
+margin_bottom = 84.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="CanvasLayer/Game/HBoxContainer/Hit4/Hit1"]
+margin_left = -1.63675
+margin_right = 86.3633
+margin_bottom = 87.0
+custom_fonts/font = SubResource( 1 )
+text = "K"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Game/HBoxContainer/Hit4"]
+position = Vector2( 42.0448, 42.0448 )
+shape = SubResource( 2 )
+
+[node name="Hit5" type="Area2D" parent="CanvasLayer/Game/HBoxContainer"]
+position = Vector2( 362.042, 2.24493 )
+
+[node name="Hit1" type="TextureRect" parent="CanvasLayer/Game/HBoxContainer/Hit5"]
+margin_right = 84.0
+margin_bottom = 84.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Game/HBoxContainer/Hit5"]
+position = Vector2( 42.0448, 42.0448 )
+shape = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/Game/HBoxContainer"]
+script = ExtResource( 5 )
+
+[node name="Tween" type="Tween" parent="CanvasLayer/Game/HBoxContainer/AudioStreamPlayer"]
+
+[node name="Timer" type="Timer" parent="CanvasLayer/Game/HBoxContainer/AudioStreamPlayer"]
+wait_time = 5.0
+one_shot = true
+
+[node name="Score" type="Label" parent="CanvasLayer/Game"]
+show_behind_parent = true
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -211.0
+margin_top = 59.0
+margin_bottom = -459.0
+grow_horizontal = 0
+grow_vertical = 0
+custom_fonts/font = SubResource( 3 )
+align = 2
+valign = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Game"]
+margin_right = 370.0
+margin_bottom = 18.0
+grow_horizontal = 0
+custom_styles/fg = SubResource( 4 )
+custom_styles/bg = SubResource( 5 )
+custom_colors/font_color = Color( 1, 0.0509804, 0.0509804, 1 )
+custom_colors/font_color_shadow = Color( 1, 0.219608, 0.219608, 1 )
+value = 100.0
+rounded = true
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Volume" parent="CanvasLayer" instance=ExtResource( 6 )]
+anchor_left = 1.00506
+anchor_top = 0.994007
+anchor_right = 1.00506
+anchor_bottom = 0.994007
+margin_left = -234.689
+margin_top = -216.118
+margin_right = 415.311
+margin_bottom = 383.882
+rect_scale = Vector2( 0.358, 0.358 )
+
+[node name="UITween" type="Tween" parent="CanvasLayer"]
+
+[node name="Pause" parent="CanvasLayer" instance=ExtResource( 3 )]
+visible = false
+[connection signal="timeout" from="CanvasLayer/Game/HBoxContainer/AudioStreamPlayer/Timer" to="CanvasLayer/Game/HBoxContainer/AudioStreamPlayer" method="stopme"]

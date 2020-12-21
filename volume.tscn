@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://cyancircle.png" type="Texture" id=1]
+[ext_resource path="res://TextureProgress.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 47.0
+margin_right = 1308.0
+margin_bottom = 1247.0
+rect_scale = Vector2( 0.48, 0.48 )
+min_value = -80.0
+max_value = 0.0
+texture_progress = ExtResource( 1 )
+fill_mode = 5
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="TextureProgress"]
+playback_speed = 0.2
+playback/speed = 0.2

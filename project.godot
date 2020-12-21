@@ -16,6 +16,9 @@ _global_script_class_icons={
 [application]
 
 config/name="rhythm game"
+run/main_scene="res://game.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="MonstersRhythm"
 config/icon="res://icon.png"
 
 [autoload]
@@ -26,7 +29,9 @@ RestHandler="*res://addons/github-integration/scripts/RestHandler.gd"
 
 [display]
 
-window/size/width=370
+window/size/width=1000
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 
@@ -54,7 +59,17 @@ piano_4={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":75,"unicode":0,"echo":false,"script":null)
  ]
 }
+vol_up={
+"deadzone": 0.51,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":4,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+vol_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":5,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+quality/driver/driver_name="GLES2"
